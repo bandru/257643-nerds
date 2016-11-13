@@ -10,58 +10,62 @@
 <body>
   <header>
     <div class="container">
-      <div class="main-menu">
-        <img src="img/logo.png" alt="Nerds" width="160" height="65"/>
+      <img class="logo" src="img/logo.png" alt="Nerds" width="160" height="65" />
+      <div class="cart">
+        <label>
+            <img src="img/cart.png" alt="Корзина" width="15" height="15"/>
+            <a href="#">Корзина</a>
+        </label>
+      </div>
+      <nav class="main-menu">
         <ul>
           <li><a href="#">Студия</a></li>
           <li><a href="#">Клиенты</a></li>
           <li><a href="#">Магазин</a></li>
           <li><a href="#">Контакты</a></li>
         </ul>
-        <label>
-            <img src="img/cart.png" alt="Корзина" width="15" height="15"/>
-            <a href="#">Корзина</a>
-          </label>
-      </div>
-      <div class="slider1">
-        <div class="text">
-          <b>Долго, дорого, скрупулезно.</b>
-          <p>
-            Математически выверенный дизайн <br> для вашего сайта или мобильного приложения.
-          </p>
-          <a href="#">УЗНАТЬ БОЛЬШЕ</a>
+      </nav>
+      <div class="slider">
+        <div class="slider1">
+          <img class="slider-img" src="img/slider1.jpg" alt="Долго, дорого, скрупулезно" width="760" height="431" />
+          <div class="slider-text">
+            <b>Долго, дорого, скрупулезно.</b>
+            <p>
+              Математически выверенный дизайн <br> для вашего сайта или мобильного приложения.
+            </p>
+            <a href="#">УЗНАТЬ БОЛЬШЕ</a>
+          </div>
+          <img class="slide-nav" src="img/slide-nav1.png" alt="" width="88" height="18" />
         </div>
-        <img src="img/slider1.jpg" alt="Долго, дорого, скрупулезно" width="760" height="431"/>
-        <img src="img/slide-nav1.png" alt="" width="88" height="18"/>
-      </div>
-      <div class="slider2">
-        <div class="text">
-          <b>Любим математику как никто другой</b>
-          <p>
-            Никакого креатива, только математические формулы <br> для расчета идеальных пропорций.
-          </p>
-          <a href="#">УЗНАТЬ БОЛЬШЕ</a>
+        <div class="slider2">
+          <div class="slider-text">
+            <b>Любим математику как никто другой</b>
+            <p>
+              Никакого креатива, только математические формулы <br> для расчета идеальных пропорций.
+            </p>
+            <a href="#">УЗНАТЬ БОЛЬШЕ</a>
+          </div>
+          <img class="slider-img" src="img/slider2.jpg" alt="Любим математику как никто другой" width="760" height="431" />
+          <img src="img/slide-nav2.png" alt="" width="88" height="18" />
         </div>
-        <img src="img/slider2.jpg" alt="Любим математику как никто другой" width="760" height="431"/>
-        <img src="img/slide-nav2.png" alt="" width="88" height="18"/>
-      </div>
-      <div class="slider3">
-        <div class="text">
-          <b>Только ночь, только хардкор</b>
-          <p>
-            Работать днем, как все? Мы против этого. <br>Ближе к полуночи работа только начинается.
-          </p>
-          <a href="#">УЗНАТЬ БОЛЬШЕ</a>
+        <div class="slider3">
+          <div class="slider-text">
+            <b>Только ночь, только хардкор</b>
+            <p>
+              Работать днем, как все? Мы против этого. <br>Ближе к полуночи работа только начинается.
+            </p>
+            <a href="#">УЗНАТЬ БОЛЬШЕ</a>
+          </div>
+          <img class="slider-img" src="img/slider3.jpg" alt="Только ночь, только хардкор" width="760" height="431" />
+          <img src="img/slide-nav3.png" alt="" width="88" height="18" />
         </div>
-        <img src="img/slider3.jpg" alt="Только ночь, только хардкор" width="760" height="431"/>
-        <img src="img/slide-nav3.png" alt="" width="88" height="18"/>
       </div>
     </div>
   </header>
-  <main>
-    <div class="advantages">
+  <main class="container">
+    <div class="advantages clearfix">
       <div class="item">
-        <img src="img/adv1.jpg" alt="Веб-сайты" width="300" height="146"/>
+        <img src="img/adv1.jpg" alt="Веб-сайты" width="300" height="146" />
         <b>Веб-сайты</b>
         <p>
           Мир никогда не будет прежним после того как увидит ваш сайт!
@@ -69,7 +73,7 @@
         <a href="#">ЗАКАЗАТЬ</a>
       </div>
       <div class="item">
-        <img src="img/adv2.jpg" alt="Приложения" width="300" height="146"/>
+        <img src="img/adv2.jpg" alt="Приложения" width="300" height="146" />
         <b>Приложения</b>
         <p>
           Покорите топ-10 приложений в AppStore и Google Play
@@ -77,7 +81,7 @@
         <a href="#">ЗАКАЗАТЬ</a>
       </div>
       <div class="item">
-        <img src="img/adv3.jpg" alt="Презентации" width="300" height="146"/>
+        <img src="img/adv3.jpg" alt="Презентации" width="300" height="146" />
         <b>Презентации</b>
         <p>
           Вы даже не подозреваете, насколько вы изумительны!
@@ -85,8 +89,8 @@
         <a href="#">ЗАКАЗАТЬ</a>
       </div>
     </div>
-    <div class="studio">
-      <div class="left">
+    <div class="studio clearfix">
+      <div class="studio-left">
         <strong>Мы — маленькая, но гордая дизайн-студия из Краснодара. </strong>
         <p>
           Исповедуем принципы минимализма и чистоты. Ставим математический расчет превыше креатива. Работаем не покладая рук, как роботы.
@@ -98,8 +102,8 @@
           <li>Слайдшоу и видео для корпоративных презентаций</li>
         </ul>
       </div>
-      <div class="right">
-        <img src="img/nerds.png" alt="Nerds" width="360" height="208"/>
+      <div class="studio-right">
+        <img src="img/nerds.png" alt="Nerds" width="360" height="208" />
         <b>с 2004 года Любим точность во всем:</b>
         <div class="percent">
           <strong>146</strong><sup>%</sup>
@@ -120,27 +124,27 @@
           </p>
         </div>
       </div>
-      <div class="projects">
-        <img src="img/logo1.png" alt="htmlacademy" width="199" height="68"/>
-        <img src="img/logo2.png" alt="borodinski" width="209" height="90"/>
-        <img src="img/logo3.png" alt="pink" width="185" height="52"/>
-        <img src="img/logo4.png" alt="mishka" width="173" height="84"/>
-      </div>
     </div>
-    <form class="write-us" action="echo" method="post">
-      <h2>Напишите нам</h2>
-      <label for="name">Ваше имя:</label>
-      <input type="text" id="name" name="name" value="Представьтесь, пожалуйста">
-      <label for="email"><b>Ваш e-mail:</b></label>
-      <input type="text" id="email" name="email" value="Для отправки ответа">
-      <label for="text"><b>Текст письма:</b></label>
-      <input type="text" id="text" name="name" value="В свободной форме">
-      <button type="submit" name="button">ОТПРАВИТЬ</button>
-    </form>
+    <div class="projects">
+      <div class="project"><img src="img/logo1.png" alt="htmlacademy" width="199" height="68" /></div>
+      <div class="project"><img src="img/logo2.png" alt="borodinski" width="209" height="90" /></div>
+      <div class="project"><img src="img/logo3.png" alt="pink" width="185" height="52" /></div>
+      <div class="project"><img src="img/logo4.png" alt="mishka" width="173" height="84" /></div>
+    </div>
   </main>
   <footer>
-    <div class="contacts">
-      <img src="img/map.jpg" alt="Мы на карте" width="1440" height="785"/>
+    <div class="map">
+      <form class="write-us" action="echo" method="post">
+        <h2>Напишите нам</h2>
+        <label for="name">Ваше имя:</label>
+        <input type="text" id="name" name="name" value="Представьтесь, пожалуйста">
+        <label for="email"><b>Ваш e-mail:</b></label>
+        <input type="text" id="email" name="email" value="Для отправки ответа">
+        <label for="text"><b>Текст письма:</b></label>
+        <input type="text" id="text" name="name" value="В свободной форме">
+        <button type="submit" name="button">ОТПРАВИТЬ</button>
+      </form>
+      <!--<img class="map-image" src="img/map.jpg" alt="Мы на карте" width="1400" height="416" />-->
       <div class="address">
         <b>NЁRDS DESIGN STUDIO</b>
         <p>
@@ -149,14 +153,18 @@
         <a href="#">Напишите нам</a>
       </div>
     </div>
-    <div class="social">
-      <a href="#">Вконтакте</a>
-      <a href="#">Фейсбук</a>
-      <a href="#">Инстаграм</a>
-      <strong>Давайте дружить, это выгодно!</strong>
-      <p>
-        Скидка 10% для друзей из социальных сетей.
-      </p>
+    <div class="container social">
+      <div class="icons">
+        <a href="#">Вконтакте</a>
+        <a href="#">Фейсбук</a>
+        <a href="#">Инстаграм</a>
+      </div>
+      <div class="social-text">
+        <strong>Давайте дружить, это выгодно!</strong>
+        <span>
+          Скидка 10% для друзей из социальных сетей.
+        </span>
+      </div>
     </div>
   </footer>
 </body>
