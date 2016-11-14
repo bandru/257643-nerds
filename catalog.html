@@ -10,31 +10,33 @@
 <body>
   <header>
     <div class="container">
-      <div class="main-menu">
-        <img src="img/logo.png" alt="Nerds" width="160" height="65"/>
+      <img class="logo" src="img/logo.png" alt="Nerds" width="160" height="65" />
+      <div class="cart">
+        <label>
+          <img src="img/cart.png" alt="Корзина" width="15" height="15"/>
+          <a href="#">Корзина</a>
+        </label>
+      </div>
+      <nav class="main-menu">
         <ul>
           <li><a href="#">Студия</a></li>
           <li><a href="#">Клиенты</a></li>
           <li><a href="#">Магазин</a></li>
           <li><a href="#">Контакты</a></li>
         </ul>
-        <label>
-            <img src="img/cart.png" alt="Корзина" width="15" height="15"/>
-            <a href="#">Корзина</a>
-          </label>
-      </div>
+      </nav>
       <h1>Магазин готовых шаблонов</h1>
     </div>
   </header>
-  <main>
-    <div class="left">
+  <main class="container clearfix">
+    <div class="column-left">
       <form class="filter" action="echo" method="get">
         <h2>СТОИМОСТЬ:</h2>
-        <div class="slider">
+        <div class="price-slider">
           <!--Тут будет слайдер выбора стоимости-->
         </div>
-        <label> ОТ <input type="text" name="min-cost" value="0"></label>
-        <label> ДО <input type="text" name="max-cost" value="15 000"></label>
+        <label> ОТ <input class="from-to" type="text" name="min-cost" value="0"></label>
+        <label> ДО <input class="from-to" type="text" name="max-cost" value="15 000"></label>
         <h2>Сетка:</h2>
         <label><input type="radio" name="grid" value="1" checked>Адаптивная</label><br>
         <label><input type="radio" name="grid" value="2">Фиксированная</label><br>
@@ -48,29 +50,35 @@
         <button type="submit" name="submit">ПОКАЗАТЬ</button>
       </form>
     </div>
-    <div class="right">
-      <h2>СОРТИРОВАТЬ:</h2>
+    <div class="column-right">
       <div class="sort">
-        <a class="sort" href="#">По цене</a>
-        <a class="sort" href="#">По типу</a>
-        <a class="sort" href="#">По названию</a>
-        <a class="sort" href="#"><img src="img/down.png" alt="down" width="9" height="9"/></a>
-        <a class="sort" href="#"><img src="img/up.png" alt="up" width="9" height="9"/></a>
-      </div>
-      <div class="product">
-        <img src="img/dot.png" alt="" width="360" height="40"/><!--Три точки в левом верхнем углу продукта-->
-        <img src="img/sedona.jpg" alt="sedona" width="360" height="576"/>
-        <div class="price">
-          <h2>Sedona</h2>
-          <p>
-            Информационный сайт  для туристов
-          </p>
-          <a href="#">9 900 руб.</a>
+        <h2>СОРТИРОВАТЬ:</h2>
+        <div class="sort">
+          <a class="sort" href="#">По цене</a>
+          <a class="sort" href="#">По типу</a>
+          <a class="sort" href="#">По названию</a>
+          <a class="sort" href="#"><img src="img/down.png" alt="down" width="9" height="9" /></a>
+          <a class="sort" href="#"><img src="img/up.png" alt="up" width="9" height="9" /></a>
         </div>
       </div>
       <div class="product">
-        <img src="img/dot.png" alt="" width="360" height="40"/><!--Три точки в левом верхнем углу продукта-->
-        <img src="img/pink.jpg" alt="pink" width="360" height="576"/>
+        <div class="tab">
+
+        </div>
+        <img src="img/sedona.jpg" alt="sedona" width="360" height="576" />
+        <div class="price">
+          <h2>Sedona</h2>
+          <p>
+            Информационный сайт для туристов
+          </p>
+          <a href="#">9 900 руб.</a>
+        </div>
+      </div><!--
+   --><div class="product">
+        <div class="tab">
+
+        </div>
+        <img src="img/pink.jpg" alt="pink" width="360" height="576" />
         <div class="price">
           <h2>Pink app</h2>
           <p>
@@ -78,10 +86,12 @@
           </p>
           <a href="#">9 900 руб.</a>
         </div>
-      </div>
-      <div class="product">
-        <img src="img/dot.png" alt="" width="360" height="40"/><!--Три точки в левом верхнем углу продукта-->
-        <img src="img/borodinski.jpg" alt="borodinski" width="360" height="576"/>
+      </div><!--
+   --><div class="product">
+        <div class="tab">
+
+        </div>
+        <img src="img/borodinski.jpg" alt="borodinski" width="360" height="576" />
         <div class="price">
           <h2>Barbershop</h2>
           <p>
@@ -89,10 +99,12 @@
           </p>
           <a href="#">9 900 руб.</a>
         </div>
-      </div>
-      <div class="product">
-        <img src="img/dot.png" alt="" width="360" height="40"/><!--Три точки в левом верхнем углу продукта-->
-        <img src="img/mishka.jpg" alt="mishka" width="360" height="576"/>
+      </div><!--
+   --><div class="product">
+        <div class="tab">
+
+        </div>
+        <img src="img/mishka.jpg" alt="mishka" width="360" height="576" />
         <div class="price">
           <h2>Mishka</h2>
           <p>
@@ -102,8 +114,10 @@
         </div>
       </div>
       <div class="product">
-        <img src="img/dot.png" alt="" width="360" height="40"/><!--Три точки в левом верхнем углу продукта-->
-        <img src="img/aplus.jpg" alt="aplus" width="360" height="576"/>
+        <div class="tab">
+
+        </div>
+        <img src="img/aplus.jpg" alt="aplus" width="360" height="576" />
         <div class="price">
           <h2>A Plus</h2>
           <p>
@@ -111,10 +125,12 @@
           </p>
           <a href="#">9 900 руб.</a>
         </div>
-      </div>
-      <div class="product">
-        <img src="img/dot.png" alt="" width="360" height="40"/><!--Три точки в левом верхнем углу продукта-->
-        <img src="img/kvast.jpg" alt="kvast" width="360" height="576"/>
+      </div><!--
+   --><div class="product">
+        <div class="tab">
+
+        </div>
+        <img src="img/kvast.jpg" alt="kvast" width="360" height="576" />
         <div class="price">
           <h2>Кваст</h2>
           <p>
@@ -123,25 +139,27 @@
           <a href="#">9 900 руб.</a>
         </div>
       </div>
-      <a href="#">1</a>
-      <a href="#">2</a>
-      <a href="#">3</a>
-      <a href="#">Следующая</a>
+      <div class="page-nav">
+        <a href="#">1</a>
+        <a href="#">2</a>
+        <a href="#">3</a>
+        <a href="#">Следующая</a>
+      </div>
     </div>
-    <form class="write-us" action="echo" method="post">
-      <h2>Напишите нам</h2>
-      <label for="name">Ваше имя:</label>
-      <input type="text" id="name" name="name" value="Представьтесь, пожалуйста">
-      <label for="email"><b>Ваш e-mail:</b></label>
-      <input type="text" id="email" name="email" value="Для отправки ответа">
-      <label for="text"><b>Текст письма:</b></label>
-      <input type="text" id="text" name="name" value="В свободной форме">
-      <button type="submit" name="button">ОТПРАВИТЬ</button>
-    </form>
   </main>
   <footer>
-    <div class="contacts">
-      <img src="img/map.jpg" alt="Мы на карте" width="1440" height="785"/>
+    <div class="map">
+      <form class="write-us" action="echo" method="post">
+        <h2>Напишите нам</h2>
+        <label for="name">Ваше имя:</label>
+        <input type="text" id="name" name="name" value="Представьтесь, пожалуйста">
+        <label for="email"><b>Ваш e-mail:</b></label>
+        <input type="text" id="email" name="email" value="Для отправки ответа">
+        <label for="text"><b>Текст письма:</b></label>
+        <input type="text" id="text" name="name" value="В свободной форме">
+        <button type="submit" name="button">ОТПРАВИТЬ</button>
+      </form>
+      <!--<img class="map-image" src="img/map.jpg" alt="Мы на карте" width="1400" height="416" />-->
       <div class="address">
         <b>NЁRDS DESIGN STUDIO</b>
         <p>
@@ -150,14 +168,18 @@
         <a href="#">Напишите нам</a>
       </div>
     </div>
-    <div class="social">
-      <a href="#">Вконтакте</a>
-      <a href="#">Фейсбук</a>
-      <a href="#">Инстаграм</a>
-      <strong>Давайте дружить, это выгодно!</strong>
-      <p>
-        Скидка 10% для друзей из социальных сетей.
-      </p>
+    <div class="container social">
+      <div class="icons">
+        <a href="#">Вконтакте</a>
+        <a href="#">Фейсбук</a>
+        <a href="#">Инстаграм</a>
+      </div>
+      <div class="social-text">
+        <strong>Давайте дружить, это выгодно!</strong>
+        <span>
+          Скидка 10% для друзей из социальных сетей.
+        </span>
+      </div>
     </div>
   </footer>
 </body>
