@@ -20,9 +20,9 @@
       </div>
       <nav class="main-menu">
         <ul>
-          <li><a href="index.html">Студия</a></li>
+          <li><a href="#">Студия</a></li>
           <li><a href="#">Клиенты</a></li>
-          <li><a href="#">Магазин</a></li>
+          <li><a class="active-item" href="#">Магазин</a></li>
           <li><a href="#">Контакты</a></li>
         </ul>
       </nav>
@@ -35,27 +35,31 @@
       <div class="price-slider">
         <!--Тут будет слайдер выбора стоимости-->
       </div>
-      <label> ОТ <input class="from-to" type="text" name="min-cost" value="0"></label>
+      <label> ОТ <input class="from from-to" type="text" name="min-cost" value="0"></label>
       <label> ДО <input class="from-to" type="text" name="max-cost" value="15 000"></label>
-      <h2>Сетка:</h2>
-      <input class="radio" id="r1" type="radio" name="grid" value="1" checked>
-      <label for="r1">Адаптивная</label><br><br>
-      <input class="radio" id="r2" type="radio" name="grid" value="2">
-      <label for="r2">Фиксированная</label><br><br>
-      <input class="radio" id="r3" type="radio" name="grid" value="3">
-      <label for="r3">Резиновая</label><br>
-      <h2>Особенности:</h2>
-      <input class="checkbox" id="c1" type="checkbox" name="features" value="1">
-      <label for="c1">Слайдер</label><br><br>
-      <input class="checkbox" id="c2" type="checkbox" name="features" value="2">
-      <label for="c2">Блок преимуществ</label><br><br>
-      <input class="checkbox" id="c3" type="checkbox" name="features" value="3">
-      <label for="c3">Новости</label><br><br>
-      <input class="checkbox" id="c4" type="checkbox" name="features" value="4">
-      <label for="c4">Галерея</label><br><br>
-      <input class="checkbox" id="c5" type="checkbox" name="features" value="5">
-      <label for="c5">Корзина</label><br><br>
-      <button type="submit" name="submit">ПОКАЗАТЬ</button>
+      <div class="filter-grid">
+        <h2>Сетка:</h2>
+        <input class="radio-default" id="r1" type="radio" name="grid" value="1" checked>
+        <label class="radio" for="r1">Адаптивная</label>
+        <input class="radio-default" id="r2" type="radio" name="grid" value="2">
+        <label class="radio" for="r2">Фиксированная</label>
+        <input class="radio-default" id="r3" type="radio" name="grid" value="3">
+        <label class="radio" for="r3">Резиновая</label>
+      </div>
+      <div class="filter-features">
+        <h2>Особенности:</h2>
+        <input class="checkbox-default" id="c1" type="checkbox" name="features" value="1">
+        <label class="checkbox" for="c1">Слайдер</label>
+        <input class="checkbox-default" id="c2" type="checkbox" name="features" value="2">
+        <label class="checkbox" for="c2">Блок преимуществ</label>
+        <input class="checkbox-default" id="c3" type="checkbox" name="features" value="3">
+        <label class="checkbox" for="c3">Новости</label>
+        <input class="checkbox-default" id="c4" type="checkbox" name="features" value="4">
+        <label class="checkbox" for="c4">Галерея</label>
+        <input class="checkbox-default" id="c5" type="checkbox" name="features" value="5">
+        <label class="checkbox" for="c5">Корзина</label>
+      </div>
+      <button type="submit" name="submit"><span>ПОКАЗАТЬ</span></button>
     </form>
     <div class="shop-products">
       <div class="sort clearfix">
@@ -129,9 +133,9 @@
         </div>
       </div>
       <div class="page-nav">
-        <a class="current-page" href="#">1</a>
-        <a href="#">2</a>
-        <a href="#">3</a>
+        <a class="current-page" href="#"><span>1</span></a>
+        <a href="#"><span>2</span></a>
+        <a href="#"><span>3</span></a>
         <a class="next" href="#">Следующая</a>
       </div>
     </div>
@@ -160,9 +164,9 @@
     </div>
     <div class="social container clearfix">
       <div class="icons">
-        <a href="#">Вконтакте</a>
-        <a href="#">Фейсбук</a>
-        <a href="#">Инстаграм</a>
+        <a class="vk" href="#">Вконтакте</a>
+        <a class="fb" href="#">Фейсбук</a>
+        <a class="inst" href="#">Инстаграм</a>
       </div>
       <div class="social-text">
         <strong>Давайте дружить, это выгодно!</strong>

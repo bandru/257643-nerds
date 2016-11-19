@@ -1,0 +1,77 @@
+.sprite {
+    background-image: url(../img/spritesheet.png);
+    background-repeat: no-repeat;
+    display: block;
+}
+
+.sprite-cart {
+    width: 15px;
+    height: 15px;
+    background-position: -5px -5px;
+}
+
+.sprite-checkbox-off {
+    width: 23px;
+    height: 23px;
+    background-position: -30px -5px;
+}
+
+.sprite-checkbox-on {
+    width: 27px;
+    height: 23px;
+    background-position: -63px -5px;
+}
+
+.sprite-close {
+    width: 21px;
+    height: 21px;
+    background-position: -5px -38px;
+}
+
+.sprite-radio-off {
+    width: 25px;
+    height: 25px;
+    background-position: -36px -38px;
+}
+
+.sprite-radio-on {
+    width: 25px;
+    height: 25px;
+    background-position: -71px -38px;
+}
+
+.sprite-slider-price-round {
+    width: 20px;
+    height: 23px;
+    background-position: -5px -73px;
+}
+
+.sprite-social-fb {
+    width: 12px;
+    height: 22px;
+    background-position: -35px -73px;
+}
+
+.sprite-social-insta {
+    width: 21px;
+    height: 21px;
+    background-position: -57px -73px;
+}
+
+.sprite-social-vk {
+    width: 26px;
+    height: 15px;
+    background-position: -100px -5px;
+}
+
+.sprite-sort-down {
+    width: 9px;
+    height: 9px;
+    background-position: -106px -30px;
+}
+
+.sprite-sort-up {
+    width: 9px;
+    height: 9px;
+    background-position: -125px -30px;
+}
