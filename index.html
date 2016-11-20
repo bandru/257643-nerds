@@ -3,6 +3,8 @@
 
 <head>
   <meta charset="utf-8">
+  <link href="https://fonts.googleapis.com/css?family=Roboto:400,500,700&amp;subset=cyrillic" rel="stylesheet">
+  <link rel="stylesheet" href="css/normalize.css">
   <link href="css/style.css" rel="stylesheet">
   <title>HTML Academy: Нёрдс</title>
 </head>
@@ -13,7 +15,6 @@
       <img class="logo" src="img/logo.png" alt="Nerds" width="160" height="65" />
       <div class="cart">
         <label>
-            <img src="img/cart.png" alt="Корзина" width="15" height="15"/>
             <a href="#">Корзина</a>
         </label>
       </div>
@@ -21,21 +22,19 @@
         <ul>
           <li><a href="#">Студия</a></li>
           <li><a href="#">Клиенты</a></li>
-          <li><a href="#">Магазин</a></li>
+          <li><a href="catalog.html">Магазин</a></li>
           <li><a href="#">Контакты</a></li>
         </ul>
       </nav>
       <div class="slider">
         <div class="slider1">
-          <img class="slider-img" src="img/slider1.jpg" alt="Долго, дорого, скрупулезно" width="760" height="431" />
           <div class="slider-text">
             <b>Долго, дорого, скрупулезно.</b>
             <p>
               Математически выверенный дизайн <br> для вашего сайта или мобильного приложения.
             </p>
-            <a href="#">УЗНАТЬ БОЛЬШЕ</a>
+            <a href="#"><span>Узнать больше</span></a>
           </div>
-          <img class="slide-nav" src="img/slide-nav1.png" alt="" width="88" height="18" />
         </div>
         <div class="slider2">
           <div class="slider-text">
@@ -43,62 +42,58 @@
             <p>
               Никакого креатива, только математические формулы <br> для расчета идеальных пропорций.
             </p>
-            <a href="#">УЗНАТЬ БОЛЬШЕ</a>
+            <a href="#"><span>УЗНАТЬ БОЛЬШЕ</span></a>
           </div>
-          <img class="slider-img" src="img/slider2.jpg" alt="Любим математику как никто другой" width="760" height="431" />
-          <img src="img/slide-nav2.png" alt="" width="88" height="18" />
         </div>
         <div class="slider3">
           <div class="slider-text">
-            <b>Только ночь, только хардкор</b>
+            <b>Только ночь, <br>только хардкор</b>
             <p>
               Работать днем, как все? Мы против этого. <br>Ближе к полуночи работа только начинается.
             </p>
-            <a href="#">УЗНАТЬ БОЛЬШЕ</a>
+            <a href="#"><span>УЗНАТЬ БОЛЬШЕ</span></a>
           </div>
-          <img class="slider-img" src="img/slider3.jpg" alt="Только ночь, только хардкор" width="760" height="431" />
-          <img src="img/slide-nav3.png" alt="" width="88" height="18" />
         </div>
       </div>
     </div>
   </header>
   <main class="container">
     <div class="advantages clearfix">
-      <div class="item">
+      <div class="item websites">
         <img src="img/adv1.jpg" alt="Веб-сайты" width="300" height="146" />
         <b>Веб-сайты</b>
         <p>
           Мир никогда не будет прежним после того как увидит ваш сайт!
         </p>
-        <a href="#">ЗАКАЗАТЬ</a>
+        <a href="#"><span>Заказать</span></a>
       </div>
-      <div class="item">
+      <div class="item apps">
         <img src="img/adv2.jpg" alt="Приложения" width="300" height="146" />
         <b>Приложения</b>
         <p>
           Покорите топ-10 приложений в AppStore и Google Play
         </p>
-        <a href="#">ЗАКАЗАТЬ</a>
+        <a href="#"><span>Заказать</span></a>
       </div>
-      <div class="item">
+      <div class="item presentations">
         <img src="img/adv3.jpg" alt="Презентации" width="300" height="146" />
         <b>Презентации</b>
         <p>
           Вы даже не подозреваете, насколько вы изумительны!
         </p>
-        <a href="#">ЗАКАЗАТЬ</a>
+        <a href="#"><span>Заказать</span></a>
       </div>
     </div>
     <div class="studio clearfix">
       <div class="studio-left">
-        <strong>Мы — маленькая, но гордая дизайн-студия из Краснодара. </strong>
+        <strong>Мы &#8722; маленькая, но гордая дизайн-студия из Краснодара. </strong>
         <p>
           Исповедуем принципы минимализма и чистоты. Ставим математический расчет превыше креатива. Работаем не покладая рук, как роботы.
         </p>
         <b>Выполняем заказы на разработку:</b>
         <ul>
-          <li>Веб-сайтов любой сложности</li>
-          <li>Мобильных приложений для iOS и Android</li>
+          <li>Веб-сайтов любой сложности</li><br>
+          <li>Мобильных приложений для iOS и Android</li><br>
           <li>Слайдшоу и видео для корпоративных презентаций</li>
         </ul>
       </div>
@@ -127,43 +122,47 @@
     </div>
     <div class="projects">
       <div class="project"><img src="img/logo1.png" alt="htmlacademy" width="199" height="68" /></div>
+      <div class="line"></div>
       <div class="project"><img src="img/logo2.png" alt="borodinski" width="209" height="90" /></div>
+      <div class="line"></div>
       <div class="project"><img src="img/logo3.png" alt="pink" width="185" height="52" /></div>
+      <div class="line"></div>
       <div class="project"><img src="img/logo4.png" alt="mishka" width="173" height="84" /></div>
     </div>
   </main>
   <footer>
+    <form class="write-us" action="echo" method="post">
+      <h2>Напишите нам</h2>
+      <label for="name">Ваше имя:</label>
+      <input type="text" id="name" name="name" value="Представьтесь, пожалуйста">
+      <label for="email"><b>Ваш e-mail:</b></label>
+      <input type="text" id="email" name="email" value="Для отправки ответа">
+      <label for="text"><b>Текст письма:</b></label>
+      <input type="text" id="text" name="name" value="В свободной форме">
+      <button type="submit" name="button">ОТПРАВИТЬ</button>
+    </form>
     <div class="map">
-      <form class="write-us" action="echo" method="post">
-        <h2>Напишите нам</h2>
-        <label for="name">Ваше имя:</label>
-        <input type="text" id="name" name="name" value="Представьтесь, пожалуйста">
-        <label for="email"><b>Ваш e-mail:</b></label>
-        <input type="text" id="email" name="email" value="Для отправки ответа">
-        <label for="text"><b>Текст письма:</b></label>
-        <input type="text" id="text" name="name" value="В свободной форме">
-        <button type="submit" name="button">ОТПРАВИТЬ</button>
-      </form>
-      <!--<img class="map-image" src="img/map.jpg" alt="Мы на карте" width="1400" height="416" />-->
-      <div class="address">
-        <b>NЁRDS DESIGN STUDIO</b>
-        <p>
-          191186, Санкт-Петербург, <br> ул. Б. Конюшенная, д. 19/8 <br><br> тел. +7 (812) 275-75-75
-        </p>
-        <a href="#">Напишите нам</a>
+      <div class="container">
+        <div class="address">
+          <strong>NЁRDS DESIGN STUDIO</strong>
+          <p>
+            191186, Санкт-Петербург, <br> ул. Б. Конюшенная, д. 19/8 <br><br> тел. +7 (812) 275-75-75
+          </p>
+          <a href="#">Напишите нам</a>
+        </div>
       </div>
     </div>
-    <div class="container social">
+    <div class="social container clearfix">
       <div class="icons">
-        <a href="#">Вконтакте</a>
-        <a href="#">Фейсбук</a>
-        <a href="#">Инстаграм</a>
+        <a class="vk" href="#">Вконтакте</a>
+        <a class="fb" href="#">Фейсбук</a>
+        <a class="inst" href="#">Инстаграм</a>
       </div>
       <div class="social-text">
         <strong>Давайте дружить, это выгодно!</strong>
-        <span>
+        <p>
           Скидка 10% для друзей из социальных сетей.
-        </span>
+        </p>
       </div>
     </div>
   </footer>
