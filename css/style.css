@@ -53,6 +53,7 @@
 
   .logo:hover {
     opacity: 0.8;
+    cursor: pointer;
   }
 
   .logo:active {
@@ -93,6 +94,7 @@
 
   .cart:hover a {
     color: #fb565a;
+    cursor: pointer;
   }
 
   .cart:active a {
@@ -135,6 +137,7 @@
 
   .main-menu a:hover {
     color: #fb565a;
+    cursor: pointer;
   }
 
   .main-menu a:active {
@@ -260,6 +263,7 @@
 
   .slider-text a:hover {
     background-color: #e74246;
+    cursor: pointer;
   }
 
   .slider-text a:active {
@@ -369,6 +373,7 @@
 
   .websites a:hover {
     background-color: #e74246;
+    cursor: pointer;
   }
 
   .websites a:active {
@@ -382,6 +387,7 @@
 
   .apps a:hover {
     background-color: #00bc6c;
+    cursor: pointer;
   }
 
   .apps a:active {
@@ -395,6 +401,7 @@
 
   .presentations a:hover {
     background-color: #eab534;
+    cursor: pointer;
   }
 
   .presentations a:active {
@@ -517,6 +524,7 @@
 
   .project:hover {
     opacity: 1;
+    cursor: pointer;
   }
 
   .project:active {
@@ -552,7 +560,8 @@
   }
 
   .address {
-    margin-top: 53px;
+    position: absolute;
+    top: 53px;
     width: 217px;
     padding: 50px 51px 47px 50px;
     background-color: #ffffff;
@@ -606,6 +615,7 @@
 
   .social a:hover {
     background-color: #e74246;
+    cursor: pointer;
   }
 
   .social a:active {
@@ -825,10 +835,12 @@
 
   label.radio:hover, label.checkbox:hover {
     color: #000000;
+    cursor: pointer;
   }
 
   label.radio:hover::before, label.checkbox:hover::before {
     opacity: 1;
+    cursor: pointer;
   }
 
   input.radio-default:disabled+label, input.checkbox-default:disabled+label {
@@ -855,6 +867,7 @@
 
   .shop-filter button:hover {
     background-color: #dfdfdf;
+    cursor: pointer;
   }
 
   .shop-filter button:active {
@@ -899,6 +912,7 @@
 
   .sort a:hover {
     opacity: 0.6;
+    cursor: pointer;
   }
 
   .sort a.active-item {
@@ -927,6 +941,7 @@
 
   .sort a.down:hover, .sort a.up:hover {
     opacity: 0.4;
+    cursor: pointer;
   }
 
   .sort a.down+.active-item, .sort a.down+.active-item {
@@ -971,8 +986,7 @@
     height: 14px;
     border-radius: 50%;
     background: #ffffff;
-    box-shadow: 23px 0 0 0 #ffffff,
-    46px 0 0 0 #ffffff;
+    box-shadow: 23px 0 0 0 #ffffff, 46px 0 0 0 #ffffff;
   }
 
   .product:nth-child(2n+1) {
@@ -995,18 +1009,22 @@
 
   .product:hover {
     box-shadow: 0 6px 15px 0 rgba(0, 1, 0, 0.25);
+    cursor: pointer;
   }
 
   .product:hover::after {
     display: none;
+    cursor: pointer;
   }
 
   .product:hover .product-price {
     display: block;
+    cursor: pointer;
   }
 
   .product:hover .tab {
     background-color: #4d4d4d;
+    cursor: pointer;
   }
 
   .product-price p {
@@ -1038,6 +1056,7 @@
 
   .product-price a.button:hover {
     background-color: #e74246;
+    cursor: pointer;
   }
 
   .product-price a.button:active {
@@ -1064,6 +1083,7 @@
 
   .page-nav a:hover {
     background-color: #dfdfdf;
+    cursor: pointer;
   }
 
   .page-nav a:active {
@@ -1098,6 +1118,11 @@
     line-height: 18px;
   }
 
+  .write-us-show {
+    display: block;
+    animation: bounce 1s;
+  }
+
   .close-write-us {
     position: absolute;
     display: block;
@@ -1112,6 +1137,7 @@
 
   .close-write-us:hover {
     opacity: 1;
+    cursor: pointer;
   }
 
   .close-write-us:active {
@@ -1171,10 +1197,12 @@
 
   .name:hover input, .email:hover input {
     border-color: #b4b9bb;
+    cursor: pointer;
   }
 
   .name input:focus, .email input:focus {
     border-color: #000000;
+    color: #444444;
     opacity: 1;
   }
 
@@ -1202,10 +1230,12 @@
 
   .text:hover textarea {
     border-color: #b4b9bb;
+    cursor: pointer;
   }
 
   .text textarea:focus {
     border-color: #000000;
+    color: #444444;
     opacity: 1;
   }
 
@@ -1223,4 +1253,27 @@
     line-height: 18px;
     border-radius: 3px;
     border: none;
+  }
+
+  iframe {
+    display: none;
+  }
+
+  .show-iframe {
+    display: block;
+  }
+
+  @keyframes bounce {
+    0% {
+      transform: translateY(-2000px);
+    }
+    70% {
+      transform: translateY(30px);
+    }
+    90% {
+      transform: translateY(-10px);
+    }
+    100% {
+      transform: translateY(0);
+    }
   }
