@@ -27,6 +27,14 @@
         </ul>
       </nav>
       <div class="slider">
+        <input id="ctrl1" type="radio" name="slider-ctrl" checked>
+        <input id="ctrl2" type="radio" name="slider-ctrl">
+        <input id="ctrl3" type="radio" name="slider-ctrl">
+        <div class="slider-controls">
+          <label for="ctrl1"></label>
+          <label for="ctrl2"></label>
+          <label for="ctrl3"></label>
+        </div>
         <div class="slider1">
           <div class="slider-text">
             <b>Долго, дорого, скрупулезно.</b>
@@ -92,8 +100,8 @@
         </p>
         <b>Выполняем заказы на разработку:</b>
         <ul>
-          <li>Веб-сайтов любой сложности</li><br>
-          <li>Мобильных приложений для iOS и Android</li><br>
+          <li>Веб-сайтов любой сложности</li>
+          <li>Мобильных приложений для iOS и Android</li>
           <li>Слайдшоу и видео для корпоративных презентаций</li>
         </ul>
       </div>
@@ -131,16 +139,6 @@
     </div>
   </main>
   <footer>
-    <form class="write-us" action="echo" method="post">
-      <h2>Напишите нам</h2>
-      <label for="name">Ваше имя:</label>
-      <input type="text" id="name" name="name" value="Представьтесь, пожалуйста">
-      <label for="email"><b>Ваш e-mail:</b></label>
-      <input type="text" id="email" name="email" value="Для отправки ответа">
-      <label for="text"><b>Текст письма:</b></label>
-      <input type="text" id="text" name="name" value="В свободной форме">
-      <button type="submit" name="button">ОТПРАВИТЬ</button>
-    </form>
     <div class="map">
       <div class="container">
         <div class="address">
@@ -166,6 +164,23 @@
       </div>
     </div>
   </footer>
+  <form class="write-us" action="echo" method="post">
+    <h2>Напишите нам</h2>
+    <div class="name">
+      <label for="name">Ваше имя:</label>
+      <input type="text" id="name" name="name" placeholder="Представьтесь, пожалуйста" value="">
+    </div>
+    <div class="email">
+      <label for="email">Ваш e-mail:</label>
+      <input type="email" id="email" name="email" placeholder="Для отправки ответа" value="">
+    </div>
+    <div class="text">
+      <label for="text">Текст письма:</label>
+      <textarea id="text" name="text" placeholder="В свободной форме"></textarea>
+    </div>
+    <button class="send" type="submit" name="button">ОТПРАВИТЬ</button>
+    <button class="close-write-us" type="button" name="close">Закрыть</button>
+  </form>
 </body>
 
 </html>
