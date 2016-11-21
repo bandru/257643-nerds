@@ -31,12 +31,18 @@
   </header>
   <main class="container clearfix">
     <form class="shop-filter" action="echo" method="get">
-      <h2>СТОИМОСТЬ:</h2>
-      <div class="price-slider">
-        <!--Тут будет слайдер выбора стоимости-->
+      <div class="filter-price clearfix">
+        <h2>СТОИМОСТЬ:</h2>
+        <div class="price-slider">
+          <div class="scale">
+            <div class="bar"></div>
+          </div>
+          <div class="toggle toggle-min"></div>
+          <div class="toggle toggle-max"></div>
+        </div>
+        <label class="from"> ОТ <input type="text" name="min-cost" value="0"></label>
+        <label class="to"> ДО <input type="text" name="max-cost" value="15 000"></label>
       </div>
-      <label> ОТ <input class="from from-to" type="text" name="min-cost" value="0"></label>
-      <label> ДО <input class="from-to" type="text" name="max-cost" value="15 000"></label>
       <div class="filter-grid">
         <h2>Сетка:</h2>
         <input class="radio-default" id="r1" type="radio" name="grid" value="1" checked>
@@ -73,63 +79,69 @@
         </div>
       </div>
       <div class="product">
+        <div class="tab"></div>
         <img src="img/sedona.jpg" alt="sedona" width="360" height="576" />
         <div class="product-price">
-          <h2>Sedona</h2>
+          <a href="#"><h2>Sedona</h2></a>
           <p>
             Информационный сайт <br>для туристов
           </p>
-          <a href="#">9 900 руб.</a>
+          <a class="button" href="#">9 900 руб.</a>
         </div>
       </div>
       <div class="product">
+        <div class="tab"></div>
         <img src="img/pink.jpg" alt="pink" width="360" height="576" />
         <div class="product-price">
-          <h2>Pink app</h2>
+          <a href="#"><h2>Pink app</h2></a>
           <p>
             Продуктовый лендинг приложения для iOS и Android
           </p>
-          <a href="#">9 900 руб.</a>
+          <a class="button" href="#">9 900 руб.</a>
         </div>
       </div>
       <div class="product">
+        <div class="tab"></div>
         <img src="img/borodinski.jpg" alt="borodinski" width="360" height="576" />
         <div class="product-price">
-          <h2>Barbershop</h2>
+          <a href="#"><h2>Barbershop</h2></a>
           <p>
-            Сайт салоны красоты. <br>Для мужчин, да.
+            Сайт салоны красоты.<br>Для мужчин, да.
           </p>
-          <a href="#">9 900 руб.</a>
+          <a class="button" href="#">9 900 руб.</a>
         </div>
       </div>
       <div class="product">
+        <div class="tab"></div>
         <img src="img/mishka.jpg" alt="mishka" width="360" height="576" />
         <div class="product-price">
-          <h2>Mishka</h2>
+          <a href="#"><h2>Mishka</h2></a>
           <p>
             Интернет-магазин <br>вязаных игрушек
           </p>
-          <a href="#">9 900 руб.</a>
+          <a class="button" href="#">9 900 руб.</a>
         </div>
       </div>
       <div class="product">
+        <div class="tab"></div>
         <img src="img/aplus.jpg" alt="aplus" width="360" height="576" />
         <div class="product-price">
-          <h2>A Plus</h2>
+          <a href="#"><h2>A Plus</h2></a>
           <p>
             Лендинг курсов повышения квалификации
           </p>
-          <a href="#">9 900 руб.</a>
+          <a class="button" href="#">9 900 руб.</a>
         </div>
       </div>
       <div class="product">
+        <div class="tab"></div>
         <img src="img/kvast.jpg" alt="kvast" width="360" height="576" />
         <div class="product-price">
-          <h2>Кваст</h2>
+          <a href="#"><h2>Кваст</h2></a>
           <p>
             Промо-сайт производителя крафтового кваса
           </p>
-          <a href="#">9 900 руб.</a>
+          <a class="button" href="#">9 900 руб.</a>
         </div>
       </div>
       <div class="page-nav">
@@ -141,16 +153,6 @@
     </div>
   </main>
   <footer>
-    <form class="write-us" action="echo" method="post">
-      <h2>Напишите нам</h2>
-      <label for="name">Ваше имя:</label>
-      <input type="text" id="name" name="name" value="Представьтесь, пожалуйста">
-      <label for="email"><b>Ваш e-mail:</b></label>
-      <input type="text" id="email" name="email" value="Для отправки ответа">
-      <label for="text"><b>Текст письма:</b></label>
-      <input type="text" id="text" name="name" value="В свободной форме">
-      <button type="submit" name="button">ОТПРАВИТЬ</button>
-    </form>
     <div class="map">
       <div class="container">
         <div class="address">
@@ -176,6 +178,23 @@
       </div>
     </div>
   </footer>
+  <form class="write-us" action="echo" method="post">
+    <h2>Напишите нам</h2>
+    <div class="name">
+      <label for="name">Ваше имя:</label>
+      <input type="text" id="name" name="name" placeholder="Представьтесь, пожалуйста" value="">
+    </div>
+    <div class="email">
+      <label for="email">Ваш e-mail:</label>
+      <input type="email" id="email" name="email" placeholder="Для отправки ответа" value="">
+    </div>
+    <div class="text">
+      <label for="text">Текст письма:</label>
+      <textarea id="text" name="text" placeholder="В свободной форме"></textarea>
+    </div>
+    <button class="send" type="submit" name="button">ОТПРАВИТЬ</button>
+    <button class="close-write-us" type="button" name="close">Закрыть</button>
+  </form>
 </body>
 
 </html>
