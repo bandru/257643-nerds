@@ -234,7 +234,7 @@
     padding-top: 79px;
   }
 
-  .slider-text b {
+  .slider-text span {
     display: block;
     margin-bottom: 26px;
     font-size: 55px;
@@ -269,10 +269,7 @@
   .slider-text a:active {
     background-color: #d7373b;
     box-shadow: inset 0 6px 0 -3px rgba(0, 1, 1, 0.1);
-  }
-
-  .slider-text a:active span {
-    opacity: 0.3;
+    color: rgba(255, 255, 255, 0.3);
   }
 
   .slider1::before {
@@ -340,7 +337,7 @@
     margin-bottom: 18px;
   }
 
-  .item b {
+  .item span {
     margin-bottom: 21px;
     font-weight: 700;
     font-size: 24px;
@@ -379,6 +376,7 @@
   .websites a:active {
     background-color: #d7373b;
     box-shadow: inset 0 6px 0 -3px rgba(0, 1, 1, 0.1);
+    color: rgba(255, 255, 255, 0.3);
   }
 
   .apps a {
@@ -393,6 +391,7 @@
   .apps a:active {
     background-color: #00aa62;
     box-shadow: inset 0 6px 0 -3px rgba(0, 1, 1, 0.1);
+    color: rgba(255, 255, 255, 0.3);
   }
 
   .presentations a {
@@ -407,10 +406,7 @@
   .presentations a:active {
     background-color: #eab534;
     box-shadow: inset 0 6px 0 -3px rgba(0, 1, 1, 0.1);
-  }
-
-  .websites a:active span, .apps a:active span, .presentations a:active span {
-    opacity: 0.3;
+    color: rgba(255, 255, 255, 0.3);
   }
 
   .studio {
@@ -430,15 +426,15 @@
     width: 360px;
   }
 
-  .studio-left strong {
+  .studio-left h4 {
     display: block;
-    margin-bottom: 33px;
+    margin: 0 0 33px 0;
     font-weight: 500;
     font-size: 45px;
     line-height: 45px;
   }
 
-  .studio-left b {
+  .studio-left span {
     display: block;
     margin: 39px 0 24px 0;
     font-weight: 700;
@@ -469,7 +465,8 @@
     margin-bottom: 29px;
   }
 
-  .studio-right b {
+  .studio-right h4 {
+    margin: 0;
     font-weight: 700;
     padding-left: 18px;
     text-transform: uppercase;
@@ -485,16 +482,17 @@
     margin-right: 0;
   }
 
-  .studio-right strong {
+  .percent span {
     font-weight: 700;
     font-size: 45px;
     line-height: 45px;
   }
 
-  .studio-right sup {
+  .studio-right .sup {
     font-weight: 700;
     font-size: 30px;
     line-height: 30px;
+    vertical-align: top;
   }
 
   .studio-right p {
@@ -567,7 +565,7 @@
     background-color: #ffffff;
   }
 
-  .map strong {
+  .map span {
     font-size: 18px;
     line-height: 30px;
     font-weight: 700;
@@ -672,7 +670,7 @@
     width: 560px;
   }
 
-  .social-text strong {
+  .social-text span {
     font-size: 36px;
     line-height: 36px;
     font-weight: 700;
@@ -873,10 +871,7 @@
   .shop-filter button:active {
     background-color: #d5d5d5;
     box-shadow: inset 0 6px 0 -3px rgba(0, 1, 1, 0.1);
-  }
-
-  .shop-filter button:active span {
-    opacity: 0.3;
+    color: rgba(0, 0, 0, 0.3);
   }
 
   .shop-products {
@@ -1089,6 +1084,7 @@
   .page-nav a:active {
     background-color: #d5d5d5;
     box-shadow: inset 0 6px 0 -3px rgba(0, 1, 1, 0.1);
+    color: rgba(0, 0, 0, 0.3);
   }
 
   .page-nav a.current-page {
@@ -1257,6 +1253,9 @@
 
   iframe {
     display: none;
+    width: 100%;
+    height: 416px;
+    border: none;
   }
 
   .show-iframe {
