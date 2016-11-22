@@ -5,18 +5,16 @@
   <meta charset="utf-8">
   <link href="https://fonts.googleapis.com/css?family=Roboto:400,500,700&amp;subset=cyrillic" rel="stylesheet">
   <link rel="stylesheet" href="css/normalize.css">
-  <link href="css/style.css" rel="stylesheet">
+  <link href="css/short-style.css" rel="stylesheet">
   <title>HTML Academy: Нёрдс</title>
 </head>
 
 <body>
   <header>
     <div class="container">
-      <a href="index.html"><img class="logo" src="img/logo.png" alt="Nerds" width="160" height="65" /></a>
+      <a href="index.html"><img class="logo" src="img/logo.png" alt="Nerds" width="160" height="65"></a>
       <div class="cart">
-        <label>
           <a href="#">Корзина</a>
-        </label>
       </div>
       <nav class="main-menu">
         <ul>
@@ -32,7 +30,7 @@
   <main class="container clearfix">
     <form class="shop-filter" action="echo" method="get">
       <div class="filter-price clearfix">
-        <h2>СТОИМОСТЬ:</h2>
+        <h2>Стоимость:</h2>
         <div class="price-slider">
           <div class="scale">
             <div class="bar"></div>
@@ -40,8 +38,8 @@
           <div class="toggle toggle-min"></div>
           <div class="toggle toggle-max"></div>
         </div>
-        <label class="from"> ОТ <input type="text" name="min-cost" value="0"></label>
-        <label class="to"> ДО <input type="text" name="max-cost" value="15 000"></label>
+        <label class="from"> От <input type="text" name="min-cost" value="0"></label>
+        <label class="to"> До <input type="text" name="max-cost" value="15 000"></label>
       </div>
       <div class="filter-grid">
         <h2>Сетка:</h2>
@@ -65,7 +63,7 @@
         <input class="checkbox-default" id="c5" type="checkbox" name="features" value="5">
         <label class="checkbox" for="c5">Корзина</label>
       </div>
-      <button type="submit" name="submit">ПОКАЗАТЬ</button>
+      <button type="submit" name="submit">Показать</button>
     </form>
     <div class="shop-products">
       <div class="sort clearfix">
@@ -80,7 +78,7 @@
       </div>
       <div class="product">
         <div class="tab"></div>
-        <img src="img/sedona.jpg" alt="sedona" width="360" height="576" />
+        <img src="img/sedona.jpg" alt="sedona" width="360" height="576">
         <div class="product-price">
           <a href="#"><h2>Sedona</h2></a>
           <p>
@@ -91,7 +89,7 @@
       </div>
       <div class="product">
         <div class="tab"></div>
-        <img src="img/pink.jpg" alt="pink" width="360" height="576" />
+        <img src="img/pink.jpg" alt="pink" width="360" height="576">
         <div class="product-price">
           <a href="#"><h2>Pink app</h2></a>
           <p>
@@ -102,7 +100,7 @@
       </div>
       <div class="product">
         <div class="tab"></div>
-        <img src="img/borodinski.jpg" alt="borodinski" width="360" height="576" />
+        <img src="img/borodinski.jpg" alt="borodinski" width="360" height="576">
         <div class="product-price">
           <a href="#"><h2>Barbershop</h2></a>
           <p>
@@ -113,7 +111,7 @@
       </div>
       <div class="product">
         <div class="tab"></div>
-        <img src="img/mishka.jpg" alt="mishka" width="360" height="576" />
+        <img src="img/mishka.jpg" alt="mishka" width="360" height="576">
         <div class="product-price">
           <a href="#"><h2>Mishka</h2></a>
           <p>
@@ -124,7 +122,7 @@
       </div>
       <div class="product">
         <div class="tab"></div>
-        <img src="img/aplus.jpg" alt="aplus" width="360" height="576" />
+        <img src="img/aplus.jpg" alt="aplus" width="360" height="576">
         <div class="product-price">
           <a href="#"><h2>A Plus</h2></a>
           <p>
@@ -135,7 +133,7 @@
       </div>
       <div class="product">
         <div class="tab"></div>
-        <img src="img/kvast.jpg" alt="kvast" width="360" height="576" />
+        <img src="img/kvast.jpg" alt="kvast" width="360" height="576">
         <div class="product-price">
           <a href="#"><h2>Кваст</h2></a>
           <p>
@@ -157,7 +155,7 @@
       <iframe class="map-frame" src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d1998.6037999040354!2d30.322010416394033!3d59.938716271971415!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x4696310fca5ba729%3A0xea9c53d4493c879f!2sBolshaya+Konyushennaya+ul.%2C+19%2C+Sankt-Peterburg%2C+Russia%2C+191186!5e0!3m2!1sen!2s!4v1441888483426"></iframe>
       <div class="container">
         <div class="address">
-          <span>NЁRDS DESIGN STUDIO</span>
+          <span>Nёrds design studio</span>
           <p>
             191186, Санкт-Петербург, <br> ул. Б. Конюшенная, д. 19/8 <br><br> тел. +7 (812) 275-75-75
           </p>
@@ -183,21 +181,20 @@
     <h2>Напишите нам</h2>
     <div class="name">
       <label for="name">Ваше имя:</label>
-      <input type="text" id="name" name="name" placeholder="Представьтесь, пожалуйста" value="">
+      <input id="name" type="text" name="name" placeholder="Представьтесь, пожалуйста" value="">
     </div>
     <div class="email">
       <label for="email">Ваш e-mail:</label>
-      <input type="email" id="email" name="email" placeholder="Для отправки ответа" value="">
+      <input id="email" type="email" name="email" placeholder="Для отправки ответа" value="">
     </div>
     <div class="text">
       <label for="text">Текст письма:</label>
       <textarea id="text" name="text" placeholder="В свободной форме"></textarea>
     </div>
-    <button class="send" type="submit" name="button">ОТПРАВИТЬ</button>
+    <button class="send" type="submit" name="button">Отправить</button>
     <button class="close-write-us" type="button" name="close">Закрыть</button>
   </form>
-  <script src="js/jquery.js"></script>
-  <script src="js/script.js"></script>
+  <script src="js/short-script.js"></script>
 </body>
 
 </html>
